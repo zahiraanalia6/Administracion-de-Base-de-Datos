@@ -73,3 +73,32 @@ Concepto ACID letra por letra:
 * Consistencia: llevará a la base de datos de un estado válido a otro válido.
 * Aislamiento: Cada transacción debe ejecutarse en aislamiento total. Por ejemplo, si T1 y T2 se ejecutan concurrentemente, cada una deberá mantenerse independiente.
 * Durabilidad:  La propiedad de durabilidad significa que una vez que se confirmó una transacción (commit), quedará persistida incluso ante eventos como pérdida de alimentación eléctrica, errores y caídas del sistema.
+
+  ***
+
+Usos de los sistemas de bases de datos
+* banca
+* Universidades
+* Transacciones
+* Ventas
+* Produccion
+* recursos humanos
+
+Niveles de abstraccion:
+* Nivel interno o físico
+El nivel más bajo de abstracción describe cómo se almacenan realmente los datos y da cuenta en detalle de las estructuras de datos complejas. 
+
+Por ejemplo
+Un registro cliente, cuenta o empleado se puede describir como un bloque de posiciones almacenadas con consecutivamente (palabras o bytes). El compilador del lenguaje esconde este nivel de detalle a los programadores.
+
+* Nivel conceptual o lógico
+El este nivel de abstracción describe qué datos se almacenan en la base de datos y qué relaciones existen entre esos datos. La base de datos completa se describe así en términos de un número pequeño de estructuras relativamente simples. En el nivel lógico cada registro se describe mediante una definición de tipo y por la relación entre estos tipos de registros. 
+
+Siguiendo con el ejemplo anterior:
+En este nivel la información es accesible a los programadores al usar un lenguaje de programación. De forma similar, los administradores de bases de datos trabajan habitualmente en este nivel de abstracción.
+
+* Nivel externo o de vistas
+El nivel más alto de abstracción describe solo parte de la base de datos completa. Muchos usuarios del sistema de base de datos no necesitan toda la información, sino que necesitan acceder solo a una parte de ella. Para que su interacción con el sistema se simplifique, se define la abstracción del nivel de vistas. En el nivel de vistas, los usuarios ven un conjunto de programas de aplicación que esconden los detalles de los tipos de datos. Además de esconder detalles del nivel lógico de la base de datos, las vistas también proporcionan un mecanismo de seguridad para evitar que los usuarios accedan a ciertas partes de la base de datos. 
+
+Pensemos, por ejemplo
+En los cajeros de un banco y la información a la que necesita acceder para cumplir con su función. El cajero consulta información referida a cuentas de clientes, pero no accede a información acerca de las transacciones de la compañía.
