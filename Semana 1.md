@@ -105,9 +105,10 @@ En los cajeros de un banco y la información a la que necesita acceder para cump
 
 ***
 # Resumen
-***
+
 * Una base de datos es: conjunto de datos interrelacionados, sin redundancias perjudiciales o innecesarias garantizando la consistencia la integridad y la seguridad de los mismos  cuyo fin es la de servir a una o varias aplicaciones, de la mejor manera posible. Los datos se almacenan de modo que resulten independientes de los programas que los usan.
 * Los sistemas gestores de bases de datos, abreviado SGBD (Database Management System o DBMS) es:  son conjunto de programas que permiten a los usuarios acceder y modificar los datos. El propósito de un sistema de base de datos es proporcionar a los usuarios una visión abstracta de los datos. Es decir, el sistema esconde, ciertos detalles desde cómo se almacenan y mantiene los datos.
 
 como se representan estos sistemas?
+
 ![2](https://github.com/zahiraanalia6/Administracion-de-Base-de-Datos/blob/main/img/2.png "2")
