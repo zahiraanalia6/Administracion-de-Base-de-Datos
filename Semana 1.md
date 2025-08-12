@@ -41,4 +41,10 @@ El conocimiento derivado del analisis o tratamiento de los datos qeu se utiliza 
 ***
 
 Que es un sistema de informacion?
-Coleccion de datos debidamente recopilados y estructurados que proporcionana informacion sobre la realidad.
+Coleccion de datos debidamente recopilados y estructurados que proporcionan informacion sobre la realidad.
+
+problemas de utilizacion de planillas:
+* Redundancia. Al no existir algún tipo de control sobre el ingreso más que el del usuario, es muy normal que existan registros duplicados y repeticiones. 
+* Error de ingreso. Al hacer un ingreso manual de datos, son frecuentes los errores de tipo de letras y números, errores ortográficos, entre otros. 
+* Estandarización. Es el tipo de error más común y se ejemplifica en el ingreso de fechas donde, a pesar de poder regir el formato de entrada, se ingresan otros formatos que, si bien pueden ser correctos, interfieren en la organización de la base de datos. Por ejemplo: 21-12-2021 o bien 21/02/2021, o 21/2/2021.
+* Seguridad. No hay control de uso y acceso por parte de los usuarios de los datos, más que el control al archivo físico en la computadora local o servidor.
