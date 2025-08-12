@@ -34,3 +34,11 @@ Para que una base de datos se considere organizada debe cumplir los siguientes o
 * nivel alto de seguridad y privacidad.
 * estar actualizada.
 * contar con independencia fisica y logica.
+
+informacion:
+El conocimiento derivado del analisis o tratamiento de los datos qeu se utiliza para tomar decisiones con vistas a un accionar concreto.
+
+***
+
+Que es un sistema de informacion?
+Coleccion de datos debidamente recopilados y estructurados que proporcionana informacion sobre la realidad.
