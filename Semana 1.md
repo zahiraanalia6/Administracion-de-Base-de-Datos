@@ -20,3 +20,17 @@ que es informacion?
 
 que es una base de datos?
 * Las bases de datos se crearon a partir de la necesidad de las grandes empresas de almacenar grandes cantidades de información de forma rápida, sencilla y fiable, y que a su vez pudieran acceder a ella en cualquier momento sin necesidad de desplazarse a salas dedicadas a archivar documentació física (como se hacía hasta el momento). 
+
+En la base de datos se guarda informacion de dos tipos:
+* datos de ususario (usados por aplicaciones).
+* datos de sistema (la base de datos utiliza para su gestion).
+
+Para que una base de datos se considere organizada debe cumplir los siguientes objetivos:
+* ser versatil.
+* atender con rapidez adecuada a la aplicacion o empresa.
+* indice de redundancia bajo.
+* alta capacidad de acceso.
+* alto indice de integridad
+* nivel alto de seguridad y privacidad.
+* estar actualizada.
+* contar con independencia fisica y logica.
