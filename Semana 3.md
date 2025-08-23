@@ -39,16 +39,6 @@ A la colección de entidades «alumnos», con el siguiente conjunto de atributos
 * (2, Josefa, 19 años, 1)
 * (3, Carlos, 20 años, 2)
 
-***
-
-**Correspondencia de cardinalidades**
-
-Los cardinales pueden ser:
-
-* uno a uno: 1:1
-* uno a varios: 1:N
-* varios a uno: N:1
-* varios a varios: N:M
 
 ***
 
@@ -64,4 +54,79 @@ Otra característica es el grado de relación:
 Recordar los elementos en un diagrama de entidad - relacion:
 
 ![20](https://github.com/zahiraanalia6/Administracion-de-Base-de-Datos/blob/main/img/20.png "20")
+
+***
+
+La relación se representa mediante una tabla
+
+Esta tabla representa a lo que en el modelo entidad-relación llamábamos entidad y contiene los atributos (columnas) y las tuplas (filas). 
+
+
+* Atributo: se trata de cada una de las columnas de la tabla. Vienen definidas por un nombre y pueden contener un conjunto de valores.
+
+* Tupla: se trata de cada una de las filas de la tabla. Es importante señalar que no se pueden tener tuplas duplicadas en una tabla. Las relaciones se representan gráficamente con rombos, dentro de ellas se coloca el nombre de la relación.
+
+***
+Propiedades de la relacion:
+* grado
+* conectividad
+* condicionalidad
+
+**Grado**
+
+* Unario: en donde una sola entidad forma parte de la relación.
+* Binario: dos entidades forman parte de la relación.
+* Ternario: tres entidades forman parte de la relación.
+
+**Conectividad**
+
+* uno a uno: 1:1
+* uno a varios: 1:N
+* varios a uno: N:1
+* varios a varios: N:M
+
+**Condicionalidad**
+
+* Con la propiedad condicionalidad estamos indicando si la relación entre las entidades es obligatoria u opcional, lo que significa determinar si existen o no instancias de ambas entidades que forman parte de la relación.
+
+* Supongamos el siguiente ejemplo: Las entidades son profesor y materia la relación es directa, en la cual una materia puede no tener asignado ningún profesor y un profesor puede dictar varias materias. 
+
+***
+
+Que es la normalizacion?
+
+Lo importante en el uso y manejo de una base de datos es evitar la redundancia de datos y garantizar el fácil acceso a los mismos.
+
+La normalización es un mecanismo que permite que un conjunto de tablas cumpla una serie de propiedades que eviten:
+
+* Redundancia de datos
+
+* Anomalías de actualización
+
+* Pérdidas de Integridad de datos
+
+El objetivo de la normalización es construir una BD que minimice la redundancia de información; para ello es necesario reagrupar los atributos de cada tabla del modelo.
+
+***
+
+*Primera forma normal* 
+
+Para decir que una relación está en 1°FN se deben cumplir las siguientes condiciones:
+
+*Debe existir una clave principal (primaria).
+
+* Todos los dominios simples contienen valores atómicos.
+
+
+*Segunda forma normal* 
+
+Para decir que una relación está en 2°FN se deben cumplir las siguientes condiciones:
+
+* Debe estar en 1°FN.
+
+* Todos los atributos no clave dependen funcionalmente de la clave primaria.
+
+*Tercera forma normal*
+
+Una tabla está en tercera forma normal (3FN) si, y solo si, está en 2FN y, además, cada atributo que no forma parte de la clave primaria no depende transitivamente de la clave.
 
