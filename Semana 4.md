@@ -68,3 +68,44 @@ El producto cartesiano natural es una operación que, a partir de dos relaciones
 
 ***
 
+**SQL**
+
+Dada su fuerte conexión con la teoría del modelo relacional, SQL es un lenguaje de alto nivel orientado a conjuntos de registros. Esto implica que un solo comando SQL  puede equivaler a decenas o cientos de líneas de código que se tendrían que utilizar en un lenguaje de más bajo nivel orientado a registros.
+
+Para el almacenamiento y operaciones de manipulación de los datos, el modelo relacional establece el uso de relación y variable de relación; mientras tanto SQL hace uso de las tablas como elemento fundamental.
+
+<img width="568" height="455" alt="image" src="https://github.com/user-attachments/assets/5b1f5acb-030f-4165-a710-d329621b7405" />
+
+*Sintaxis en SQL - DDL* 
+
+DDL -> lenguaje de definicion de datos
+
+Administrar un modelo físico de datos SQL presenta tres cláusulas básicas: CREATE, DROP y ALTER. Los mismos se corresponden con crear, borrar o modificar el esquema existente.
+
+***
+
+Para generar una BD la sentencia SQL es:
+
+$${\color{blue}create \space \color{white}database \space nombreBD:}$$
+
+Para eliminar un BD:
+
+$${\color{blue}drop \space \color{white}database \space nombreBD:}$$
+
+Para generar una tabla en una BD:
+
+$${\color{blue}create \space table \space \color{white}Socio \color{blue}(}$$
+
+$${\color{white}CodSocio \space \color{pink}int \color{blue},}$$
+
+$${\color{white}DNI \space \color{pink}varchar \space \color{blue}( \color{yellow}10 \color{blue}) \color{blue},}$$
+
+$${\color{white}Nombre \space \color{pink}varchar \space \color{blue}( \color{yellow}60 \color{blue}) \color{blue},}$$
+
+$${\color{white}Apellido \space \color{pink}varchar \space \color{blue}( \color{yellow}60 \color{blue}) \color{blue},}$$
+
+$${\color{white}Direccion \space \color{pink}varchar \space \color{blue}( \color{yellow}30 \color{blue}) \color{blue},}$$
+
+$${\color{white}Tel \space \color{pink}varchar \space \color{blue}( \color{yellow}15 \color{blue}) \color{blue},}$$
+
+$${\color{blue}Constraint \space \color{white}pk-persona \space \color{blue}primary \space kay \space ( \color{white}CodSocio \color{blue})  \color{blue}) \space \color{white}engine \color{blue}= \color{white}innobd \color{blue};}$$
