@@ -84,15 +84,15 @@ Administrar un modelo físico de datos SQL presenta tres cláusulas básicas: CR
 
 ***
 
-Para generar una BD la sentencia SQL es:
+* Para generar una BD la sentencia SQL es:
 
 $${\color{blue}create \space \color{white}database \space nombreBD:}$$
 
-Para eliminar un BD:
+* Para eliminar un BD:
 
 $${\color{blue}drop \space \color{white}database \space nombreBD:}$$
 
-Para generar una tabla en una BD:
+* Para generar una tabla en una BD:
 
 $${\color{blue}create \space table \space \color{white}Socio \color{blue}(}$$
 
@@ -109,3 +109,62 @@ $${\color{white}Direccion \space \color{pink}varchar \space \color{blue}( \color
 $${\color{white}Tel \space \color{pink}varchar \space \color{blue}( \color{yellow}15 \color{blue}) \color{blue},}$$
 
 $${\color{blue}Constraint \space \color{white}pk-persona \space \color{blue}primary \space kay \space ( \color{white}CodSocio \color{blue})  \color{blue}) \space \color{white}engine \color{blue}= \color{white}innobd \color{blue};}$$
+
+
+En este caso algunos de los atributos son:
+
+* CodSocio con dominio entero, no puede ser nulo porque está declarado como PK.
+
+* Nombre con dominio varchar (caracteres) y con longitud máxima 60.
+
+***
+
+*InnoBD*
+
+Es un mecanismo de almacenamiento de datos de código abierto para la base de datos MySQL, incluido como formato de tabla estándar en todas las distribuciones de MySQL a partir de las versiones 4.0. Su característica principal es que soporta transacciones de tipo ACID y bloqueo de registros e integridad referencial. InnoDB ofrece una fiabilidad y consistencia muy superior a MyISAM, la anterior tecnología de tablas de MySQL, si bien el mejor rendimiento de uno u otro formato dependerán de la aplicación específica.
+
+* Para eliminar una tabla de la BD:
+
+$${\color{blue}drop \space \color{white}table \space nombre-tabla}$$
+
+* Para modificar una tabla del modelo:
+
+$${\color{blue}alter \space table \color{white}nombre-tabla \space ...}$$
+
+* Si se quiere agregar una FK:
+
+$${\color{blue}ALTER \space TABLE \space \color{white}nombre.tabla \space \color{blue}ADD \space FOREIGN \space ( \color{white}atributo \color{blue}) \space REFERENCES \space \color{white}Tabla \color{blue}( \color{white}Atributos \color{blue});}$$
+
+* Si se quiere crear un atributo:
+
+$${\color{blue}ALTER \space TABLE \space \color{white}nombre.tabla \space \color{blue}ADD \space column \space [ \color{white}Atributo \color{blue}] \space [ \color{white}Tipo \space de \space datos \color{blue}];}$$ 
+
+***
+
+La estructura básica de SQL tiene el siguiente formato:
+
+$${\color{blue}SELECT \space \color{white}lista.de.atributos \color{blue};}$$
+
+$${\color{blue}From \space \color{white}lista.de.tablas \color{blue};}$$
+
+$${\color{blue}WHERE \space \color{white} predicado \color{blue};}$$
+
+* Veamos que significan cada uno de estos ítems:
+
+1. lista_de_Atributos indica los nombres de los atributos que serán presentados en el resultado; estos atributos deben estar contenidos en las tablas indicadas en la consulta.
+
+
+2. lista_de_Tablas indica las tablas de la BD necesarios para resolver la consulta; sobre las tablas indicadas de la lista se realiza el producto cartesiano.
+
+3. Predicado indica que condición deben cumplir las tuplas de las tablas para estar en el resultado final de la consulta.
+
+
+***
+
+*Ejemplo de álgebra relacional migrado a SQL*
+
+En la siguiente tabla podemos observar como es trabajar con alguna de las operaciones que vimos en álgebra relacional, pero utilizando los conceptos vistos en SQL.
+
+
+<img width="583" height="390" alt="image" src="https://github.com/user-attachments/assets/76ac692f-23b4-43b5-a727-fa8fd706ad72" />
+
